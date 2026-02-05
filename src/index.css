@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   /* Applying your custom font here */
-  font-family: 'BeautifulFreakBold', serif; 
+  font-family: 'BeautifulFreakBold', 'BringBoldNineties', serif; 
   
   /* YOUR CUSTOM RADIAL GRADIENT */
   background: radial-gradient(circle, #00bcff 0%, #f08ece 100%);
