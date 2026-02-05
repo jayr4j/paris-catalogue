@@ -1,24 +1,24 @@
 /* --- 1. FONT REGISTRATION --- */
 /* This links your uploaded .ttf files to a name the CSS can use */
 /* --- 1. FONT REGISTRATION --- */
+/* --- 1. FONT REGISTRATION (Vercel-Proof Version) --- */
 @font-face {
   font-family: 'BeautifulFreakBold';
-  /* Try removing the dot: use 'fonts/...' instead of './fonts/...' */
-  src: url('fonts/BeautifulFreakBold.otf') format('opentype');
+  src: url('/fonts/BeautifulFreakBold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BringBoldNineties';
-  src: url('fonts/BringBoldNineties.ttf') format('truetype');
+  src: url('/fonts/BringBoldNineties.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Anatomical';
-  src: url('fonts/Anatomical.ttf') format('truetype');
+  src: url('/fonts/Anatomical.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
