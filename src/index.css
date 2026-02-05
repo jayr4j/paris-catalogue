@@ -1,0 +1,173 @@
+/* --- 1. FONT REGISTRATION --- */
+/* This links your uploaded .ttf files to a name the CSS can use */
+@font-face {
+  font-family: 'BeautifulFreak';
+  src: url(./fonts/BeautifulFreakBold.otf) format('opentype');
+  font-style: normal;
+  }
+ @font-face { font-family:'BringBoldNineties';
+  src: url(./fonts/BringBoldNineties.ttf) format('truetype');
+  font-style: normal;
+  }
+ @font-face { font-family: 'Anatomical';
+  src: url(./fonts/Anatomical.ttf) format('truetype');
+  font-style: normal;
+}
+
+/* --- 2. GLOBAL STYLES --- */
+body {
+  margin: 0;
+  padding: 0;
+  /* Applying your custom font here */
+  font-family: 'BeautifulFreak', serif; 
+  
+  /* YOUR CUSTOM RADIAL GRADIENT */
+  background: radial-gradient(circle, #00bcff 0%, #f08ece 100%);
+  background-attachment: fixed; 
+  min-height: 100vh;
+  color: #363636;
+}
+
+/* --- 3. THE HEADER --- */
+.header h1::before {
+  /* THIS IS WHERE YOUR TITLE LIVES NOW */
+  content: "Pari's Catalogue"; 
+  
+  /* SIZE CONTROL */
+  /* Use a massive size like 8rem or 120px to test if it's working */
+  font-size: 4rem !important; 
+  
+  /* FONT AND STYLE */
+  font-family: 'BringBoldNineties', !important;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+  color: #000000;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  
+  /* This ensures the text doesn't wrap weirdly if it's too big */
+  /*white-space: nowrap; 
+
+
+/* Optional: Adjust the subtitle to move with the new big title */
+}
+.header::after {
+  content: "Where every creation tells a story";
+  font-family: 'BeautifulFreak', serif;
+  letter-spacing: 0.4rem;
+  word-spacing: 0.2rem;
+  font-size: 1.7rem;
+  display:block;
+  text-align: center;
+  color: #fffdfd;
+}
+
+/* --- 4. THE PROJECT GRID --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+/* --- 5. THE PROJECT CARDS --- */
+.card {
+  /* Slightly more transparent white to let the blue/pink pop through */
+  background: rgba(255, 255, 255, 0.85); 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(10%); /* Lowered grayscale to keep the art vibrant */
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #3e2723;
+}
+
+.card-info p {
+  color: #00bcff; /* Matched to your gradient's blue */
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* --- 6. THE POPUP (MODAL) --- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+/* --- 7. THE CLOSE BUTTON --- */
+.close-btn {
+  background: #f08ece; /* Matched to your gradient's pink */
+  color: white;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(240, 142, 206, 0.4);
+}
+
+.close-btn:hover {
+  background: #00bcff; /* Switches to blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 188, 255, 0.4);
+}
