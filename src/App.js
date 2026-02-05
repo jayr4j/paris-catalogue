@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-  <h1 aria-label="Pari's Catalogue"></h1>
+  <h1 className="header-title">
+  <span style={{ visibility: 'hidden' }}>Pari's Catalogue</span>
+</h1>
 </header>
       
       <div className="project-grid">
