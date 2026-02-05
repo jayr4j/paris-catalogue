@@ -10,8 +10,8 @@
 }
 
 @font-face {
-  font-family: 'BringBoldNineties';
-  src: url('/fonts/BringBoldNineties.ttf') format('truetype');
+  font-family: 'BringBoldNineties'; /* Ensure no spaces here */
+  src: url('/fonts/BringBoldNineties.ttf?v=1');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,19 +39,15 @@ body {
 
 /* --- 3. THE HEADER --- */
 .header h1::before {
-  /* THIS IS WHERE YOUR TITLE LIVES NOW */
-  content: "Pari's Catalogue"; 
-  
-  /* SIZE CONTROL */
-  /* Use a massive size like 8rem or 120px to test if it's working */
-  font-size: 4rem !important; 
-  
-  /* FONT AND STYLE */
-  font-family: 'BringBoldNineties', !important;
+  content: "Pari's Catalogue";
+  /* Match the name ABOVE exactly. Add sans-serif as a backup */
+  font-family: 'BringBoldNineties', sans-serif !important; 
+  font-size: 8rem !important;
+  color: #3e2723;
+  display: block;
+  display: block; 
   letter-spacing: 0.3rem;
   word-spacing: 0.6rem;
-  color: #000000;
-  display: block;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
