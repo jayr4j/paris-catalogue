@@ -63,6 +63,8 @@ body {
   font-family: 'BeautifulFreakBold', serif;
   letter-spacing: 0.4rem;
   word-spacing: 0.2rem;
+  margin-top: -60px;
+  margin-bottom: 30px;
   font-size: 1.7rem;
   display:block;
   text-align: center;
