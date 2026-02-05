@@ -31,7 +31,7 @@ body {
   font-family: 'BeautifulFreakBold', serif; 
   
   /* YOUR CUSTOM RADIAL GRADIENT */
-  background: radial-gradient(circle, #00bcff 0%, #f08ece 100%);
+  background: radial-gradient(circle, #c31f1f 0%, #820f5a 100%);
   background-attachment: fixed; 
   min-height: 100vh;
   color: #363636;
@@ -43,7 +43,7 @@ body {
   /* Match the name ABOVE exactly. Add sans-serif as a backup */
   font-family: 'BringBoldNineties' !; 
   font-size: 8rem !important;
-  color: #000000;
+  color: #f57bd0;
   display: block;
   display: block; 
   letter-spacing: 0.3rem;
@@ -126,7 +126,7 @@ body {
 }
 
 .card-info p {
-  color: #00bcff; /* Matched to your gradient's blue */
+  color: #ff0000; /* Matched to your gradient's blue */
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 2px;
@@ -147,7 +147,7 @@ body {
 }
 
 .modal-content {
-  background: #fff;
+  background: #ffe0f8;
   padding: 50px;
   border-radius: 30px;
   max-width: 700px;
@@ -156,10 +156,34 @@ body {
   position: relative;
   box-shadow: 0 30px 60px rgba(0,0,0,0.5);
 }
+.modal-content h2 {
+  font-family: 'BringBoldNineties', sans-serif !important;
+  font-size: 2.5rem;
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+
+/* The Category/Small text (e.g., "Digital Art") */
+.modal-content p:first-of-type {
+  font-family: 'comic sans', sans-serif !important;
+  color: #f08ece; /* Using your pink from the gradient */
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* The Main Description text */
+.modal-content p:last-of-type {
+  font-family: 'BeautifulFreakBold', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
 
 /* --- 7. THE CLOSE BUTTON --- */
 .close-btn {
-  background: #f08ece; /* Matched to your gradient's pink */
+  background: #c31f1f; /* Matched to your gradient's pink */
   color: white;
   border: none;
   padding: 15px 45px;
@@ -174,7 +198,7 @@ body {
 }
 
 .close-btn:hover {
-  background: #00bcff; /* Switches to blue on hover */
+  background: #820f5a; /* Switches to blue on hover */
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 188, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
