@@ -3,22 +3,22 @@
 /* --- 1. FONT REGISTRATION --- */
 /* --- 1. FONT REGISTRATION (Vercel-Proof Version) --- */
 @font-face {
-  font-family: 'BeautifulFreakBold';
-  src: url('/fonts/BeautifulFreakBold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BringBoldNineties'; /* Ensure no spaces here */
-  src: url('/fonts/BringBoldNineties.ttf?v=1');
+  font-family:'BeautifulFreakBold';
+  src: url("fonts/BeautifulFreakBold.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Anatomical';
-  src: url('/fonts/Anatomical.ttf') format('truetype');
+  font-family:'BringBoldNineties'; /* Ensure no spaces here */
+  src: url("fonts/BringBoldNineties.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Anatomical';
+  src: url("fonts/Anatomical.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   /* Applying your custom font here */
-  font-family: 'BeautifulFreakBold', 'BringBoldNineties', serif; 
+  font-family: 'BeautifulFreakBold', serif; 
   
   /* YOUR CUSTOM RADIAL GRADIENT */
   background: radial-gradient(circle, #00bcff 0%, #f08ece 100%);
@@ -41,9 +41,9 @@ body {
 .header h1::before {
   content: "Pari's Catalogue";
   /* Match the name ABOVE exactly. Add sans-serif as a backup */
-  font-family: 'BringBoldNineties', sans-serif !important; 
+  font-family: 'BringBoldNineties' !; 
   font-size: 8rem !important;
-  color: #3e2723;
+  color: #000000;
   display: block;
   display: block; 
   letter-spacing: 0.3rem;
