@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-  <h1></h1> {/* Leave this empty */}
+  <h1 aria-label="Pari's Catalogue"></h1>
 </header>
       
       <div className="project-grid">

@@ -1,16 +1,25 @@
 /* --- 1. FONT REGISTRATION --- */
 /* This links your uploaded .ttf files to a name the CSS can use */
+/* --- 1. FONT REGISTRATION --- */
 @font-face {
-  font-family: 'BeautifulFreak';
-  src: url(./fonts/BeautifulFreakBold.otf) format('opentype');
+  font-family: 'BeautifulFreakBold';
+  /* Try removing the dot: use 'fonts/...' instead of './fonts/...' */
+  src: url('fonts/BeautifulFreakBold.otf') format('opentype');
+  font-weight: bold;
   font-style: normal;
-  }
- @font-face { font-family:'BringBoldNineties';
-  src: url(./fonts/BringBoldNineties.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'BringBoldNineties';
+  src: url('fonts/BringBoldNineties.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  }
- @font-face { font-family: 'Anatomical';
-  src: url(./fonts/Anatomical.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Anatomical';
+  src: url('fonts/Anatomical.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -19,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   /* Applying your custom font here */
-  font-family: 'BeautifulFreak', serif; 
+  font-family: 'BeautifulFreakBold', serif; 
   
   /* YOUR CUSTOM RADIAL GRADIENT */
   background: radial-gradient(circle, #00bcff 0%, #f08ece 100%);
@@ -55,7 +64,7 @@ body {
 }
 .header::after {
   content: "Where every creation tells a story";
-  font-family: 'BeautifulFreak', serif;
+  font-family: 'BeautifulFreakBold', serif;
   letter-spacing: 0.4rem;
   word-spacing: 0.2rem;
   font-size: 1.7rem;
